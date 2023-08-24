@@ -7,6 +7,7 @@
 
     section#login {
         width: 90vw;
+        height: 280px;
     }
 
     #imagem {
@@ -20,6 +21,12 @@
         width: 70%;
     }
 
+    imagem {
+        display: block;
+        background: blueviolet url(../imagens/pexels-pixabay-35543.jpg) no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width:992px) {

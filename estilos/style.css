@@ -21,7 +21,6 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: white;
     width: 250px;
@@ -32,6 +31,8 @@ main {
     
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -61,11 +62,34 @@ main {
     background-color: #9900ff;
     width: 100%;
     height: 40px;
-    border-radius:5px ;
+    border-radius:8px ;
     margin: 5px 0px;
+    border: 2px solid  #9900ff ;
 }
+
 label {
     display: none;
+}
+
+.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+.campo input{
+      background-color: #94cfcd;
+      font-size: 1em;
+      width: calc(100% - 45px);
+      border: 0px; 
+      border-radius: 8px;
+      padding: 8px;
+      transform: translateY(-12px);
+}
+
+.campo input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
@@ -76,13 +100,15 @@ form > input[type=submit] {
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius:5px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
     background-color: #2d6462;
 }
+
+
 
 form > a#botao {
     display: block;
